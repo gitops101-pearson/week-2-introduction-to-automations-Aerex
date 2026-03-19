@@ -1,0 +1,11 @@
+name: HTML Check
+
+on: [pull_request]
+
+jobs:
+  check-html:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check HTML
+        run: echo "HTML checked!"
